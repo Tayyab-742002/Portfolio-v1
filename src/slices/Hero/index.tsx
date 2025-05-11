@@ -94,14 +94,14 @@ const Hero: FC<SliceComponentProps<Content.HeroSlice>> = ({ slice }) => {
     // Animation loop
     const animate = () => {
       // Throttle to 30fps on mobile
-      if (window.innerWidth < 768) {
-        setTimeout(() => {
-          requestAnimationFrame(animate);
-        }, 1000 / 30);
-      } else {
-        requestAnimationFrame(animate);
-      }
-
+      // if (window.innerWidth < 768) {
+      //   setTimeout(() => {
+      //     requestAnimationFrame(animate);
+      //   }, 1000 / 30);
+      // } else {
+      //   requestAnimationFrame(animate);
+      // }
+      requestAnimationFrame(animate);
       // Reduce animation complexity on mobile
       const isMobile = window.innerWidth < 768;
       const rotationSpeed = isMobile ? 0.005 : 0.01;
