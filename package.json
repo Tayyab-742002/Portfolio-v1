@@ -5,6 +5,7 @@
   "engines": {
     "node": "22.x"
   },
+  "build": "TAILWIND_DISABLE_OXIDE=false astro build",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
