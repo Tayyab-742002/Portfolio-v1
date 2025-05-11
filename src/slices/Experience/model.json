@@ -1,0 +1,72 @@
+{
+  "id": "experience",
+  "type": "SharedSlice",
+  "name": "Experience",
+  "description": "Experience",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "experiences": {
+          "type": "Group",
+          "config": {
+            "label": "experiences",
+            "repeat": true,
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": ""
+                }
+              },
+              "key_achievement": {
+                "type": "Text",
+                "config": {
+                  "label": "Key achievement",
+                  "placeholder": ""
+                }
+              },
+              "company_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Company Name",
+                  "placeholder": ""
+                }
+              },
+              "end_date": {
+                "type": "Text",
+                "config": {
+                  "label": "End Date",
+                  "placeholder": ""
+                }
+              },
+              "start_date": {
+                "type": "Text",
+                "config": {
+                  "label": "Start Date",
+                  "placeholder": ""
+                }
+              },
+              "achievments": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Achievments",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,rtl,o-list-item"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

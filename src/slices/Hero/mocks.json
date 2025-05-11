@@ -1,0 +1,68 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"name": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Aliqua dolor mollit dolor cupidatat ad proident nulla ut dolor elit sunt proident veniam consectetur. Ea sunt qui do. Dolor cupidatat et laborum dolore non fugiat."
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Consectetur tempor esse est reprehenderit consequat ex aliqua pariatur do ex reprehenderit sint quis sit."
+						}
+					}
+				]
+			},
+			"cta": {
+				"key": "3c870e88-6134-4727-a851-ec46ae5d28fb",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com",
+					"text": "never"
+				}
+			},
+			"expertise": {
+				"__TYPE__": "FieldContent",
+				"value": "oxygen",
+				"type": "Text"
+			},
+			"avatar": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+					"width": 8640,
+					"height": 8640
+				},
+				"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+				"width": 8640,
+				"height": 8640,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "second",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]

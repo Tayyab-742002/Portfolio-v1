@@ -1,0 +1,43 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"testimonials": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"comment",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "bridge",
+									"type": "Text"
+								}
+							],
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "seat",
+									"type": "Text"
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "spend",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,86 @@
+{
+  "id": "projects",
+  "type": "SharedSlice",
+  "name": "Projects",
+  "description": "Projects",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "primary": {
+        "projects": {
+          "type": "Group",
+          "config": {
+            "label": "projects",
+            "repeat": true,
+            "fields": {
+              "category": {
+                "type": "Select",
+                "config": {
+                  "label": "Category",
+                  "placeholder": "Select project category",
+                  "options": ["WEB", "MOBILE", "AI"]
+                }
+              },
+              "thumbnail": {
+                "type": "Image",
+                "config": {
+                  "label": "Thumbnail",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": ""
+                }
+              },
+              "description": {
+                "type": "Text",
+                "config": {
+                  "label": "Description",
+                  "placeholder": ""
+                }
+              },
+              "live_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Live Link",
+                  "placeholder": "Project live URL"
+                }
+              },
+              "github_link": {
+                "type": "Link",
+                "config": {
+                  "label": "GitHub Link",
+                  "placeholder": "Project GitHub URL"
+                }
+              },
+              "demo_video": {
+                "type": "Link",
+                "config": {
+                  "label": "Demo Video",
+                  "placeholder": "Video URL (YouTube/Vimeo)"
+                }
+              },
+              "long_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Long Description",
+                  "placeholder": "Detailed project description",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

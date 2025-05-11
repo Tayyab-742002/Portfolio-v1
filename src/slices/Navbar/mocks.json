@@ -1,0 +1,59 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"logo": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+					"width": 5848,
+					"height": 3899
+				},
+				"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+				"width": 5848,
+				"height": 3899,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "year",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"logotext": {
+				"__TYPE__": "FieldContent",
+				"value": "above",
+				"type": "Text"
+			},
+			"links": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"url",
+								{
+									"key": "0b9b03d0-8f4a-490c-b867-b8ea607334d4",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "car"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

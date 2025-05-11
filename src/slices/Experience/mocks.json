@@ -1,0 +1,73 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"experiences": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "eight",
+									"type": "Text"
+								}
+							],
+							[
+								"key_achievement",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "got",
+									"type": "Text"
+								}
+							],
+							[
+								"company_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "fairly",
+									"type": "Text"
+								}
+							],
+							[
+								"end_date",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "from",
+									"type": "Text"
+								}
+							],
+							[
+								"start_date",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "choice",
+									"type": "Text"
+								}
+							],
+							[
+								"achievments",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Aliquip adipisicing do ex. Id mollit cupidatat irure elit elit consequat nostrud anim velit fugiat."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

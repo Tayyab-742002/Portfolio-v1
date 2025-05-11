@@ -1,0 +1,17 @@
+{
+  "format": "custom",
+  "id": "live_url",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      }
+    }
+  },
+  "label": "Live URL",
+  "repeatable": true,
+  "status": true
+}

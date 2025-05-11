@@ -1,0 +1,70 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"email": {
+				"__TYPE__": "FieldContent",
+				"value": "that",
+				"type": "Text"
+			},
+			"phone_number": {
+				"__TYPE__": "FieldContent",
+				"value": "coach",
+				"type": "Text"
+			},
+			"address": {
+				"__TYPE__": "FieldContent",
+				"value": "western",
+				"type": "Text"
+			},
+			"social_links": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"linkedln",
+								{
+									"key": "4d487f0f-f25c-4b94-b123-98b60feece41",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "tales"
+									}
+								}
+							],
+							[
+								"instagram",
+								{
+									"key": "c4be6efe-3ec8-464c-822e-2772ed814a27",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "correct"
+									}
+								}
+							],
+							[
+								"github",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "ecc3d9f6-b61b-4f0b-9599-c32652503afb",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev",
+										"text": "most"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

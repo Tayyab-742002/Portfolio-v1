@@ -1,0 +1,112 @@
+{
+  "type": "SharedSlice",
+  "id": "blog",
+  "name": "Blog",
+  "description": "A carousel of blog posts",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default variation",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Section Heading",
+            "placeholder": "Latest Blog Posts",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Section Description",
+            "placeholder": "Discover my latest thoughts and insights",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {
+        "post_thumbnail": {
+          "type": "Image",
+          "config": {
+            "label": "Post Thumbnail",
+            "constraint": {
+              "width": 800,
+              "height": 600
+            }
+          }
+        },
+        "post_category": {
+          "type": "Text",
+          "config": {
+            "label": "Post Category",
+            "placeholder": "Development"
+          }
+        },
+        "post_title": {
+          "type": "Text",
+          "config": {
+            "label": "Post Title",
+            "placeholder": "How to Build Modern Web Applications"
+          }
+        },
+        "post_excerpt": {
+          "type": "Text",
+          "config": {
+            "label": "Post Excerpt",
+            "placeholder": "A brief description of the blog post..."
+          }
+        },
+        "post_date": {
+          "type": "Date",
+          "config": {
+            "label": "Post Date"
+          }
+        },
+        "reading_time": {
+          "type": "Number",
+          "config": {
+            "label": "Reading Time (minutes)",
+            "placeholder": "5"
+          }
+        },
+        "post_link": {
+          "type": "Link",
+          "config": {
+            "label": "Post Link",
+            "placeholder": "Link to full blog post"
+          }
+        },
+        "author_name": {
+          "type": "Text",
+          "config": {
+            "label": "Author Name",
+            "placeholder": "John Doe"
+          }
+        },
+        "author_image": {
+          "type": "Image",
+          "config": {
+            "label": "Author Image",
+            "constraint": {
+              "width": 100,
+              "height": 100
+            }
+          }
+        },
+        "reading_progress": {
+          "type": "Number",
+          "config": {
+            "label": "Reading Progress",
+            "placeholder": "50"
+          }
+        }
+      }
+    }
+  ]
+}

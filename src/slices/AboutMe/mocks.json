@@ -1,0 +1,109 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"avatar": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+					"width": 2747,
+					"height": 4120
+				},
+				"url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa",
+				"width": 2747,
+				"height": 4120,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "through",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"techareas": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "like",
+									"type": "Text"
+								}
+							],
+							[
+								"percentage",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "silent",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"my_journey": {
+				"__TYPE__": "FieldContent",
+				"value": "continent",
+				"type": "Text"
+			},
+			"journey_detail": {
+				"__TYPE__": "FieldContent",
+				"value": "independent",
+				"type": "Text"
+			},
+			"tags": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"tag_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "reach",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"tech_expertise": {
+				"__TYPE__": "FieldContent",
+				"value": "engineer",
+				"type": "Text"
+			},
+			"tech_skills": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"skill",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "quarter",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

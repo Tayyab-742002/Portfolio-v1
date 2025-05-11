@@ -1,0 +1,103 @@
+{
+  "id": "about_me",
+  "type": "SharedSlice",
+  "name": "AboutMe",
+  "description": "AboutMe",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "avatar": {
+          "type": "Image",
+          "config": {
+            "label": "avatar",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "techareas": {
+          "type": "Group",
+          "config": {
+            "label": "TechAreas",
+            "repeat": true,
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": ""
+                }
+              },
+              "percentage": {
+                "type": "Text",
+                "config": {
+                  "label": "Percentage",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "my_journey": {
+          "type": "Text",
+          "config": {
+            "label": "My Journey",
+            "placeholder": ""
+          }
+        },
+        "journey_detail": {
+          "type": "Text",
+          "config": {
+            "label": "Journey Detail",
+            "placeholder": ""
+          }
+        },
+        "tags": {
+          "type": "Group",
+          "config": {
+            "label": "Tags",
+            "repeat": true,
+            "fields": {
+              "tag_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Tag name",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "tech_expertise": {
+          "type": "Text",
+          "config": {
+            "label": "Tech Expertise",
+            "placeholder": ""
+          }
+        },
+        "tech_skills": {
+          "type": "Group",
+          "config": {
+            "label": "Tech Skills",
+            "repeat": true,
+            "fields": {
+              "skill": {
+                "type": "Text",
+                "config": {
+                  "label": "skill",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

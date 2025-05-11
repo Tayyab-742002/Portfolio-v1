@@ -1,0 +1,17 @@
+{
+  "format": "custom",
+  "id": "cover_image",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      }
+    }
+  },
+  "label": "Cover Image",
+  "repeatable": true,
+  "status": true
+}

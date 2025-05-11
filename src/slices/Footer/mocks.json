@@ -1,0 +1,24 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"year": {
+				"__TYPE__": "FieldContent",
+				"value": "sitting",
+				"type": "Text"
+			},
+			"name": {
+				"__TYPE__": "FieldContent",
+				"value": "freedom",
+				"type": "Text"
+			},
+			"field": {
+				"__TYPE__": "FieldContent",
+				"value": "paid",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

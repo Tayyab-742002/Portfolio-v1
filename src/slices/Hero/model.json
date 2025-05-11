@@ -1,0 +1,63 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "avatar": {
+          "type": "Image",
+          "config": {
+            "label": "avatar",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "name": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Name",
+            "placeholder": "Your Name",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading5,heading6,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "Your Profession",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "cta": {
+          "type": "Link",
+          "config": {
+            "label": "CTA",
+            "placeholder": "Call To Action Button",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "expertise": {
+          "type": "Text",
+          "config": {
+            "label": "expertise",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
