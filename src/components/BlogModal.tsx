@@ -77,7 +77,7 @@ const BlogModal = ({ isOpen, onClose, blog }: BlogModalProps) => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 md:p-6">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -93,52 +93,51 @@ const BlogModal = ({ isOpen, onClose, blog }: BlogModalProps) => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="relative w-full max-w-5xl bg-[#14141e] shadow-2xl rounded-2xl overflow-hidden"
+            className="relative w-full max-w-3xl bg-[#14141e] shadow-2xl rounded-2xl overflow-hidden max-h-[90vh]"
           >
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 z-50 p-2 rounded-full bg-black/20 backdrop-blur-md hover:bg-black/40 transition-colors duration-200 group"
+              className="absolute top-2 right-2 sm:top-4 sm:right-4 z-50 p-1.5 sm:p-2 rounded-full bg-black/20 backdrop-blur-md hover:bg-black/40 transition-colors duration-200 group"
             >
-              <X className="w-5 h-5 text-white/80 group-hover:text-white" />
+              <X className="w-4 h-4 sm:w-5 sm:h-5 text-white/80 group-hover:text-white" />
             </button>
 
-            {/* Content Wrapper */}
-            <div className="flex flex-col lg:flex-row max-h-[calc(100vh-2rem)] md:max-h-[calc(100vh-3rem)]">
-              {/* Left Column - Image */}
+            {/* Content Wrapper - Now in column layout */}
+            <div className="flex flex-col max-h-[90vh] overflow-hidden">
+              {/* Top - Image */}
               <motion.div
                 variants={contentVariants}
                 custom={0}
-                className="relative w-full lg:w-1/2 h-[200px] sm:h-[250px] md:h-[300px] lg:h-[600px]"
+                className="relative w-full h-[180px] sm:h-[250px] md:h-[300px]"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#4f8fff]/20 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#4f8fff]/20 to-transparent z-10" />
                 <PrismicNextImage
                   field={blog.post_thumbnail}
                   fill
                   className="object-cover"
-                  // alt={blog.post_title}
                 />
 
                 {/* Category Badge */}
                 <motion.div
                   variants={contentVariants}
                   custom={1}
-                  className="absolute top-4 left-4 sm:top-6 sm:left-6 z-20"
+                  className="absolute top-3 left-3 sm:top-6 sm:left-6 z-20"
                 >
-                  <span className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium bg-[#4f8fff] bg-opacity-20 backdrop-blur-md text-white border border-[#4f8fff]/30 shadow-[0_0_20px_rgba(79,143,255,0.15)]">
+                  <span className="px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium bg-[#4f8fff] bg-opacity-20 backdrop-blur-md text-white border border-[#4f8fff]/30 shadow-[0_0_20px_rgba(79,143,255,0.15)]">
                     {blog.post_category}
                   </span>
                 </motion.div>
               </motion.div>
 
-              {/* Right Column - Content */}
-              <div className="relative w-full lg:w-1/2 overflow-y-auto modal-scroll">
-                <div className="p-4 sm:p-6 lg:p-8">
+              {/* Bottom - Content */}
+              <div className="relative w-full overflow-y-auto modal-scroll max-h-[calc(90vh-180px)] sm:max-h-[calc(90vh-250px)] md:max-h-[calc(90vh-300px)]">
+                <div className="p-3 sm:p-5 lg:p-6">
                   {/* Title */}
                   <motion.h2
                     variants={contentVariants}
                     custom={2}
-                    className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4"
+                    className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3 sm:mb-4"
                   >
                     {blog.post_title}
                   </motion.h2>
@@ -147,21 +146,20 @@ const BlogModal = ({ isOpen, onClose, blog }: BlogModalProps) => {
                   <motion.div
                     variants={contentVariants}
                     custom={3}
-                    className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 p-3 sm:p-4 rounded-xl bg-white/5 backdrop-blur-sm"
+                    className="flex items-center gap-2 sm:gap-4 mb-3 sm:mb-5 p-2 sm:p-3 lg:p-4 rounded-xl bg-white/5 backdrop-blur-sm"
                   >
-                    <div className="relative w-10 h-10 sm:w-12 sm:h-12">
+                    <div className="relative w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
                       <PrismicNextImage
                         field={blog.author_image}
                         className="rounded-lg object-cover"
                         fill
-                        // alt={blog.author_name}
                       />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-white font-medium text-sm sm:text-base truncate">
+                      <h3 className="text-white font-medium text-xs sm:text-sm lg:text-base truncate">
                         {blog.author_name}
                       </h3>
-                      <div className="flex items-center gap-2 sm:gap-4 text-xs sm:text-sm text-white/60 flex-wrap">
+                      <div className="flex items-center gap-2 sm:gap-3 text-xs text-white/60 flex-wrap">
                         <span className="flex items-center">
                           <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1 text-[#4f8fff]" />
                           {new Date(blog.post_date).toLocaleDateString()}
@@ -178,13 +176,13 @@ const BlogModal = ({ isOpen, onClose, blog }: BlogModalProps) => {
                   <motion.div
                     variants={contentVariants}
                     custom={4}
-                    className="prose prose-invert prose-sm sm:prose-base lg:prose-lg max-w-none mb-6 sm:mb-8"
+                    className="prose prose-invert prose-sm max-w-none mb-4 sm:mb-6"
                   >
-                    <p className="text-white/80 leading-relaxed">
+                    <p className="text-sm sm:text-base text-white/80 leading-relaxed">
                       {blog.post_excerpt}
                     </p>
                     {blog.post_content && (
-                      <div className="mt-4 sm:mt-6 text-white/70">
+                      <div className="mt-3 sm:mt-5 text-xs sm:text-sm lg:text-base text-white/70">
                         {blog.post_content}
                       </div>
                     )}
@@ -194,18 +192,18 @@ const BlogModal = ({ isOpen, onClose, blog }: BlogModalProps) => {
                   <motion.div
                     variants={contentVariants}
                     custom={5}
-                    className="flex justify-end pt-4 sm:pt-6 border-t border-white/10"
+                    className="flex justify-end pt-3 sm:pt-4 border-t border-white/10"
                   >
                     <button
-                      className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-[#4f8fff]/10 hover:bg-[#4f8fff]/20 transition-colors"
+                      className="flex items-center gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 lg:px-4 lg:py-2 rounded-lg bg-[#4f8fff]/10 hover:bg-[#4f8fff]/20 transition-colors"
                       onClick={() => {
                         if (blog.post_link?.url) {
                           navigator.clipboard.writeText(blog.post_link.url);
                         }
                       }}
                     >
-                      <Share2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#4f8fff]" />
-                      <span className="text-white/80 text-sm sm:text-base">Share</span>
+                      <Share2 className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-[#4f8fff]" />
+                      <span className="text-white/80 text-xs sm:text-sm lg:text-base">Share</span>
                     </button>
                   </motion.div>
 
@@ -214,7 +212,7 @@ const BlogModal = ({ isOpen, onClose, blog }: BlogModalProps) => {
                     <motion.div
                       variants={contentVariants}
                       custom={6}
-                      className="mt-4 sm:mt-6"
+                      className="mt-3 sm:mt-5"
                     >
                       <div className="relative h-1 w-full bg-white/5 rounded-full overflow-hidden">
                         <motion.div

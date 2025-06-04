@@ -243,12 +243,12 @@ const Blog = ({ slice }: BlogProps) => {
                     >
                       {/* Blog Card */}
                       <motion.div
-                        className="group relative w-[300px] h-[400px] bg-[#14141e] rounded-2xl overflow-hidden cursor-pointer"
+                        className="group relative w-[280px] sm:w-[300px] h-[380px] sm:h-[400px] bg-[#14141e] rounded-2xl overflow-hidden cursor-pointer"
                         whileHover={{ y: -5 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
                       >
                         {/* Image Container - Adjusted height */}
-                        <div className="relative w-full h-[180px] overflow-hidden">
+                        <div className="relative w-full h-[160px] sm:h-[180px] overflow-hidden">
                           <PrismicNextImage
                             field={item.post_thumbnail}
                             fill
@@ -264,25 +264,25 @@ const Blog = ({ slice }: BlogProps) => {
                         </div>
 
                         {/* Content Container */}
-                        <div className="p-5 space-y-3">
+                        <div className="p-4 sm:p-5 space-y-2 sm:space-y-3">
                           {/* Title */}
-                          <h3 className="text-lg font-semibold text-white group-hover:text-[#4f8fff] transition-colors duration-300 line-clamp-2">
+                          <h3 className="text-base sm:text-lg font-semibold text-white group-hover:text-[#4f8fff] transition-colors duration-300 line-clamp-2 h-[48px]">
                             {item.post_title}
                           </h3>
 
                           {/* Excerpt */}
-                          <p className="text-sm text-gray-400 line-clamp-3">
+                          <p className="text-xs sm:text-sm text-gray-400 line-clamp-1">
                             {item.post_excerpt}
                           </p>
 
                           {/* Metadata */}
-                          <div className="flex items-center gap-4 text-xs text-gray-400">
-                            <div className="flex items-center gap-1.5">
-                              <Clock className="w-4 h-4 text-[#4f8fff]" />
-                              <span>{item.reading_time} min read</span>
+                          <div className="flex items-center gap-3 sm:gap-4 text-xs text-gray-400">
+                            <div className="flex items-center gap-1">
+                              <Clock className="w-3 h-3 sm:w-4 sm:h-4 text-[#4f8fff]" />
+                              <span>{item.reading_time} min</span>
                             </div>
-                            <div className="flex items-center gap-1.5">
-                              <Calendar className="w-4 h-4 text-[#4f8fff]" />
+                            <div className="flex items-center gap-1">
+                              <Calendar className="w-3 h-3 sm:w-4 sm:h-4 text-[#4f8fff]" />
                               <span>
                                 {new Date(item.post_date).toLocaleDateString()}
                               </span>
@@ -290,8 +290,8 @@ const Blog = ({ slice }: BlogProps) => {
                           </div>
 
                           {/* Author Section */}
-                          <div className="flex items-center gap-3 pt-3 mt-3 border-t border-gray-800">
-                            <div className="relative w-9 h-9 rounded-full overflow-hidden">
+                          <div className="flex items-center gap-2 sm:gap-3 pt-2 sm:pt-3 mt-2 sm:mt-3 border-t border-gray-800">
+                            <div className="relative w-7 h-7 sm:w-9 sm:h-9 rounded-full overflow-hidden">
                               <PrismicNextImage
                                 field={item.author_image}
                                 fill
@@ -300,22 +300,19 @@ const Blog = ({ slice }: BlogProps) => {
                               />
                             </div>
                             <div className="flex-1 min-w-0">
-                              <p className="text-sm text-white font-medium truncate">
+                              <p className="text-xs sm:text-sm text-white font-medium truncate">
                                 {item.author_name}
                               </p>
-                              {/* <p className="text-xs text-gray-400 truncate">
-                                {item.author_role}
-                              </p> */}
                             </div>
 
                             {/* Read More Button */}
                             <motion.div
-                              className="flex items-center gap-1.5 text-sm text-[#4f8fff] font-medium"
+                              className="flex items-center gap-1 text-xs sm:text-sm text-[#4f8fff] font-medium"
                               whileHover={{ x: 5 }}
                               transition={{ duration: 0.2 }}
                             >
-                              Read More
-                              <ArrowRight className="w-4 h-4" />
+                              Read
+                              <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                             </motion.div>
                           </div>
                         </div>

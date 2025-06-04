@@ -201,7 +201,7 @@ const Hero: FC<SliceComponentProps<Content.HeroSlice>> = ({ slice }) => {
       {/* Content Container */}
       <div className="container mx-auto px-4 text-center">
         {/* Avatar */}
-        <div className="relative w-48 h-48 mx-auto mb-8">
+        <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto mb-6 sm:mb-8">
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#4f8fff] to-transparent opacity-30 blur-xl animate-pulse" />
           <div className="relative w-full h-full rounded-full bg-[#14141e]">
             <div className="w-full h-full rounded-full bg-gradient-to-br from-[#4f8fff20] to-[#14141e] border border-[#4f8fff30]">
@@ -217,12 +217,12 @@ const Hero: FC<SliceComponentProps<Content.HeroSlice>> = ({ slice }) => {
         </div>
 
         {/* Name */}
-        <div ref={textRef} className="mt-10 mb-10 ">
+        <div ref={textRef} className="mt-6 sm:mt-8 md:mt-10 mb-6 sm:mb-8 md:mb-10">
           <PrismicRichText
             field={slice.primary.name}
             components={{
               paragraph: ({ children }) => (
-                <h1 className="text-4xl font-bold text-white glow-text mb-2">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white glow-text mb-2">
                   {children}
                 </h1>
               ),
@@ -235,22 +235,22 @@ const Hero: FC<SliceComponentProps<Content.HeroSlice>> = ({ slice }) => {
           field={slice.primary.title}
           components={{
             paragraph: ({ children }) => (
-              <h2 className="text-2xl text-[#aaaaff] mb-4">{children}</h2>
+              <h2 className="text-xl sm:text-2xl text-[#aaaaff] mb-4">{children}</h2>
             ),
           }}
         />
 
         {/* Expertise */}
-        <div className="flex items-center justify-center gap-2 mb-8">
-          <span ref={expertiseRef} className="text-lg text-white" />
-          <span ref={cursorRef} className="w-0.5 h-6 bg-[#4f8fff]" />
+        <div className="flex items-center justify-center gap-2 mb-6 sm:mb-8">
+          <span ref={expertiseRef} className="text-base sm:text-lg text-white" />
+          <span ref={cursorRef} className="w-0.5 h-5 sm:h-6 bg-[#4f8fff]" />
         </div>
 
         {/* CTA Button */}
         <PrismicNextLink
           // field={slice.primary.cta}
           href={"#projects"}
-          className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-[#4f8fff] text-white hover:bg-[#4f8fff20] transition-all duration-300 group"
+          className="inline-flex items-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 rounded-full border-2 border-[#4f8fff] text-white hover:bg-[#4f8fff20] transition-all duration-300 group"
         >
           EXPLORE WORK
           <span className="transform translate-x-0 group-hover:translate-x-2 transition-transform duration-300">
