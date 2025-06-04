@@ -72,7 +72,7 @@ const MainWrapper = ({ children }: { children: React.ReactNode }) => {
                   className="animated-vertical-line"
                   style={{
                     left: `${index * cellWidth}px`,
-                    animationDelay: `${index * 0.2}s`,
+                  
                     height: `${dimensions.scrollHeight}px`,
                   }}
                 />
@@ -93,7 +93,7 @@ const MainWrapper = ({ children }: { children: React.ReactNode }) => {
                   className="animated-horizontal-line"
                   style={{
                     top: `${index * cellHeight}px`,
-                    animationDelay: `${index * 0.2}s`,
+                   
                   }}
                 />
               ))}

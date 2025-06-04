@@ -258,12 +258,8 @@ const Hero: FC<SliceComponentProps<Content.HeroSlice>> = ({ slice }) => {
           </span>
         </PrismicNextLink>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-          <div className="w-6 h-10 rounded-full border-2 border-[#4f8fff] flex justify-center">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#4f8fff] animate-bounce mt-2" />
-          </div>
-        </div>
+      
+       
       </div>
     </section>
   );
